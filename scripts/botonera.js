@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="${rutaBase}paginas/carpeta-ciudadana">
             <button class="boton">Carpeta ciudadana</button>
         </a>
+        <a href="${rutaBase}paginas/appmovil.html">
+            <button id="boton-app" class="boton">APP móvil</button>
+        </a>
         </span>
             <button class="boton" id="pozu">a</button>
         <hr>

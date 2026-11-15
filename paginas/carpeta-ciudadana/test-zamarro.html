@@ -217,6 +217,7 @@
     <button style="color:lime; padding: 1%;" class="boton-centro" onclick="descargarZamaTest();">DESCARGAR</button>
     <br>
     <button class="boton-centro" onclick='
+    // Para borrar los resultados y que por tanto cargue el test de cero
     let borrarlo = confirm("¿Seguro que quieres empezar de cero?")
     
     if (borrarlo)
@@ -230,6 +231,7 @@
 
       <script src="../scripts/excelentisimoadmin.js"></script>
         <script>
+            // Para que si ya has hecho el test te muestre la seccion del resultado en vez de el test
             if (localStorage.getItem("Zamarreza"))
             {
                 document.getElementById("test-zamarro").style = "display: none !important;";
@@ -239,6 +241,7 @@
         </script>
 
         <script>
+        // Para poner la comparacion de cuanto zamarro te percibias a cuanto eres
         let autoperce = Number(localStorage.getItem("autoperce"));
 
         let zamarreza = Number(localStorage.getItem("Zamarreza"));

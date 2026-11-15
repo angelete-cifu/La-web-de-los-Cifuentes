@@ -9,6 +9,10 @@ html
     color: rgb(4, 23, 51);
     text-align:right
 }
+#boton-app
+{
+    display: none;
+}
 #boton-menu
 {
     display: none;
@@ -726,5 +730,9 @@ input[type="submit"]
     margin-right: 1.8%;
     padding: 3.5%;
     background-color: rgb(255, 228, 254);
+    }
+    #boton-app
+    {
+    display: inline;
     }
 }
