@@ -6,10 +6,28 @@ const tope = 7;
 
 function camnombre ()
 {
-        let nombre = prompt("¿Como te llamas?");
-        localStorage.setItem("tunombre", nombre);
-        location.reload();
-        generarNumerin();
+        let nombresaved = localStorage.getItem("tunombre");
+
+        if (nombresaved)
+        {
+        let nombre = prompt("¿Quieres cambiar tu nombre zarrio?" , nombresaved);
+            if(nombre)
+            {
+            localStorage.setItem("tunombre", nombre);
+            location.reload();
+            generarNumerin();
+            }
+        }
+        else
+        {
+        let nombre = prompt("¿Como te llamas zarrio?");
+            if(nombre)
+            {
+            localStorage.setItem("tunombre", nombre);
+            location.reload();
+            generarNumerin();
+            }
+        }
 }
 
 function generarNumerin() {
@@ -24,9 +42,26 @@ function generarNumerin() {
 
 function cambio ()
 {
+        let biosaved = localStorage.getItem("biografia")
+
+        if (biosaved)
+        {
+        let mibio = prompt("Editar biografia" , biosaved);
+            if (mibio)
+            {
+            localStorage.setItem("biografia", mibio);
+            location.reload();
+            }
+        }
+        else
+        {
         let mibio = prompt("Escriba una descripción corta sobre usted");
-        localStorage.setItem("biografia", mibio);
-        location.reload();
+            if (mibio)
+            {
+            localStorage.setItem("biografia", mibio);
+            location.reload();
+            }
+        }
 }
 
 function fotourl()
